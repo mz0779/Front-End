@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!--Its an information to the browser what document type to expect -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ColdDrinksLover</title>
+    </head>
+    <body>
+        <main>    
+            <h1>ColdDrinksLover</h1>
+           <section> 
+                <h2>Types Of Cold Drinks</h2>
+                <!--Add links to Cold Drinks Photos-->
+                <p>Click here to <a target="_blank" href="https://www.pepsi.com">Buy Pepsi</a></p>
+                <!--target attribute specify where to open the linked document( _blank=will open the document in new tab)-->
+                <a href="https://www.pepsi.com" ><img src="./pic/cold-drinks.jfif" alt="A pepsi bottle"></a>
+                <!--alt will present text if the pic is not resposed-->
+           </section>
+           <section>
+            <h2>Cold Drinks Lists</h2>
+            <h3>Cold Drinks Flavour</h3>
+            
+            <ul> <!--Unorder list will appear as dot sign proceed by text-->
+                <li>Strawberry</li>
+                <li>Lime</li>
+                <li>Lemonade</li>
+                <li>Orange</li>
+            </ul>
+            <figure>
+                <img src="./pic/lemonado1.jfif" alt="lemonado">
+                <figcaption>Lemonado</figcaption>
+            </figure>
+            <figure>
+                <img src="./pic/orange1.jfif" alt="lemonado">
+                <figcaption>Orange</figcaption>
+            </figure>
+            <figure>
+                <img src="./pic/lime1.jfif" alt="lemonado">
+                <figcaption>Lime</figcaption>
+            </figure>
+            <figure>
+                <img src="./pic/strawberry1.jfif" alt="lemonado">
+                <figcaption>Strawberry</figcaption>
+            </figure>
+            <h3>Three Disadvantage Of Cold Drinks</h3>
+            <ol><!--Order list will appear as number proceed by text-->
+                <li>Sugar</li>
+                <li>Fat</li>
+                <li>Colestrol</li>
+            </ol>
+            <figure> <!-- Figure element used to mark up a photo in a document-->
+                <img src="./pic/different-types-of-cold-drinks.jfif" alt="different types of cold drinks pic">
+                <figcaption>Different Types Of <strong>Cold Drinks</strong></figcaption> <!--used to give a caption for a photos-->
+                <!--strong will make the text bold-->
+            </figure>
+           </section>
+           <section>
+            <h2>Cold Drinks Form</h2>
+            <form action="https://submit-url.com"> <!--creat a HTML form for used input -->
+               <fieldset> <!--Fieldset is used to groupe related elements in a form-->
+                <legend>What type of Cold Drinks you Drink?</legend> <!-- define a caption for a fieldset elemetn-->
+                <label><input type="radio" id="sugar" name="sugar-sugar_free" value="sugar" checked>Sugar</label>
+                <label><input type="radio" id="sugar-free" name="sugar-sugar_free" value="sugar-free">Sugar-Free</label>
+                <input type="text" name="cold-drinks-url" placeholder="cold drinks URL" required>
+               </fieldset>
+               <fieldset>
+                <legend>What's your favourity flavour in drinks?</legend>
+                <input id="lemonado" type="checkbox" value="lemonado" checked > <label for="leomonado" name="flavour" >Lemonado</label>
+                <input id="lime" type="checkbox" value="lime"> <label for="lime" name="flavour">Lime</label>
+                <input id="orange" type="checkbox" value="orange"> <label for="orange" name="flavour">Orange</label>
+                <input id="Strawberry" type="checkbox" value="Strawberry"> <label for="Strawberry" name="flavour">Strawberry</label>
+                <!--label tag will increse the clickable area / and screen reader read loud tips: for attribute must be same as input id-->
+               </fieldset>
+                <button type="submit">Submit</button>
+            </form>
+           </section>
+        </main>
+        <footer>
+            <p>No Copyright - <a href="hadiuzzaamanZafri.org"> hadiuzzamanZafri.org</a></p>
+        </footer>
+    </body>
+</html>    
